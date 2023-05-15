@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { StatisticsSection, Title, StatList } from './Statistics.styles';
 import { StatItem } from './StatItem';
 
@@ -12,4 +13,15 @@ export const Statistics = ({ title, data }) => {
       </StatList>
     </StatisticsSection>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string,
+  data: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
 };

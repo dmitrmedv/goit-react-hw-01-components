@@ -9,3 +9,9 @@ export const TableBody = ({ type, amount, currency }) => {
     </tr>
   );
 };
+
+TableBody.propTypes = {
+  type: PropTypes.string,
+  amount: PropTypes.string,
+  currency: PropTypes.string,
+};
