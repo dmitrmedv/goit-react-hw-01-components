@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export const Stats = ({ stats }) => {
   let str = [];
   for (let key in stats) {
@@ -9,4 +11,12 @@ export const Stats = ({ stats }) => {
     );
   }
   return str;
+};
+
+Stats.prototype = {
+  stats: PropTypes.shape({
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes: PropTypes.number,
+  }),
 };
