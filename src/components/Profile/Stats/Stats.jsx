@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
+import css from 'components/Stats/Stats.module.css';
 
 export const Stats = ({ stats }) => {
   let str = [];
   for (let key in stats) {
     str.push(
       <li key={key}>
-        <span className="label">{key}</span>
-        <span className="quantity">{stats[key]}</span>
+        <span className={css.label}>{key}</span>
+        <span className={css.quantity}>{stats[key]}</span>
       </li>
     );
   }

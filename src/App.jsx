@@ -1,6 +1,14 @@
-import { Profile } from './components/Profile';
-import data from './components/data/user.json';
+import { Profile } from 'Profile/Profile';
+import user from 'data/user.json';
 
 export const App = () => {
-  return <Profile data={data}></Profile>;
+  return (
+    <Profile
+      username={user.username}
+      tag={user.tag}
+      location={user.location}
+      stats={user.stats}
+      avatar={user.avatar}
+    ></Profile>
+  );
 };
