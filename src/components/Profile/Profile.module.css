@@ -2,7 +2,7 @@
   margin: 30px auto 0 auto;
   width: 300px;
   border-radius: 10px;
-  box-shadow: 0px 0px 44px 11px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
 }
 
 .description {
@@ -17,11 +17,14 @@
   height: 60%;
   border-radius: 50%;
   margin-bottom: 20px;
-  box-shadow: 0px 0px 44px 11px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
 }
 
 .name {
   margin-bottom: 10px;
+  font-weight: bold;
+  font-size: large;
+  color: #162234;
 }
 
 .tag {
@@ -30,9 +33,9 @@
 
 .stats {
   display: flex;
-  background-color: rgb(223, 217, 217);
+  background-color: #eff0f3;
   border-radius: 0 0 10px 10px;
-  border-top: 1px solid rgb(143, 140, 140);
+  border-top: 1px solid #d2d6db;
 }
 
 .stats > li {
@@ -44,5 +47,5 @@
 }
 
 .stats > li:not(:last-child) {
-  border-right: 1px solid rgb(143, 140, 140);
+  border-right: 1px solid #d2d6db;
 }
