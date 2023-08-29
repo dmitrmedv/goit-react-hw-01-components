@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import css from 'components/Stats/Stats.module.css';
+import css from './Stats.module.css';
 
 export const Stats = ({ stats }) => {
   let str = [];
