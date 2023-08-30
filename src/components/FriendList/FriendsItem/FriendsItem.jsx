@@ -7,7 +7,7 @@ export const FriendsItem = ({ arrayOfFriends }) => {
         <span
           className={css.status}
           style={{
-            backgroundColor: isOnline && `rgb(31, 133, 11)`,
+            backgroundColor: isOnline && `#4eaf4d`,
           }}
         ></span>
         <img className={css.avatar} src={avatar} alt={name} width="48" />
